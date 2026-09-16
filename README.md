@@ -13,6 +13,29 @@
   Mean      492.0      800.0
 Change in mean score: +308.0
 
+## Evidence
+
+**Untrained gameplay (before training):**
+![Untrained](Results/demos/episode_0000.gif)
+
+**After 25 episodes:**
+![Episode 25](Results/demos/episode_0025.gif)
+
+**After 50 episodes:**
+![Episode 50](Results/demos/episode_0050.gif)
+
+**After 75 episodes:**
+![Episode 75](Results/demos/episode_0075.gif)
+
+**After 100 episodes:**
+![Episode 100](Results/demos/episode_0100.gif)
+
+**Best trained gameplay (final):**
+![Best trained](Results/demos/final_best.gif)
+
+**Training dashboard (score / loss / exploration):**
+![Dashboard](Results/training_dashboard.png)
+
 - **One limitation:** My main limitation was not training long enough. The agent didn't get enough practice to settle into one reliable way of playing. I saw this in two ways: the five test games in a single run had very different scores from each other (some doubled, one actually got worse), and when I ran the whole notebook again with the exact same settings, I got noticeably different results each time.
 - **My next experiment:** change only episodes to 500 and keep the other two settings fixed.
 
@@ -30,7 +53,10 @@ Change in mean score: +308.0
   "learning_updates": 14261,
   "elapsed_seconds_including_periodic_demos": 228.66553284199927
 
-[comparison.json](Results/comparison.json)
+Full run data: [`config.json`](Results/config.json) &middot;
+[`training.csv`](Results/training.csv) &middot;
+[`training_summary.json`](Results/training_summary.json) &middot;
+[`comparison.json`](Results/comparison.json)
 
 The agent observes four screens, chooses a joystick action, and receives game rewards.
 Lower training loss does not necessarily mean a higher game score. Report lack of progress if that is what happened.
