@@ -30,6 +30,8 @@ Change in mean score: +308.0
   "learning_updates": 14261,
   "elapsed_seconds_including_periodic_demos": 228.66553284199927
 
+Results/comparison.json
+
 The agent observes four screens, chooses a joystick action, and receives game rewards.
 Lower training loss does not necessarily mean a higher game score. Report lack of progress if that is what happened.
 
